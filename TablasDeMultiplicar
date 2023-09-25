@@ -1,0 +1,73 @@
+//Se manda a traer clase pincipal como (TABLAS DE MULTIPLICAR)
+package tablas.de.multiplicar;
+
+//se importa una clase Scanner que nos permite obtener la entrada de datos primitivos 
+import java.util.Scanner;
+
+/**
+ *
+ * @author MI NOMBRE
+ */
+// Se nombra la clase principal (Tablas de multiplicar)
+public class TablasDeMultiplicar {
+
+    /**
+     * @param args the command line arguments
+     */
+    //Se manda la funcion principal para ejecutar la clase como una aplicacion de consolola 
+    public static void main(String[] args) {
+        Scanner l= new Scanner(System.in);
+        TABLAS m=new TABLAS();
+        byte t;
+        //Se imprime el texto especificando dentro de los parentesis 
+              
+              System.out.println("Menu tablas de multiplicar");
+              System.out.println("[2]tabla del 3");
+              System.out.println("[3]tabla del 4");
+              System.out.println("[4]tabla del 5");
+              System.out.println("[5]tabla del 6");
+              System.out.println("[6]tabla del 7");
+              System.out.println("[7]tabla del 8");
+              System.out.println("[8]tabla del 9");
+              t=l.nextByte();
+              if(t==1)
+              {
+                  m.tabladel_1();
+                     }
+              // se coloca un else if para tomar decisiones sobre un valor preexistente
+              else if(t==2)
+              {
+                  m.tabla_2();
+              }
+              else if(t==3)
+              {
+                  m.tabla_3();
+              }
+              else if(t==4)
+              {
+                 m.tabla_4();
+              }
+              else if(t==5)
+              {
+                  m.tabla_5();
+              }
+              else if(t==6)
+              {
+                  m.tabla_6();
+              }
+              else if(t==7)
+              {
+                  m.tabla_7();
+              }
+              else if(t==8)
+              {
+                 m.tabla_8();
+              }
+    }
+    
+    }
+
+// Nuesra notacion seria por medio de los comentarios su funcion es ua herramienta de aprendizaje 
+//de forma secuencial que resume los datos numericos sobre la forma de multiplicacion  c=a*b 
+//Estas son utiles para memorizar de una forma mas rapida la secuencia de operacion que con la practica podemos resolverlas de 
+//una forma mas facil y como nuestra herramienta seria NetBeans  
